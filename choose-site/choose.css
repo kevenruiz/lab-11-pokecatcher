@@ -25,7 +25,7 @@ body {
 
 
 input {
-    display: none;
+    display: 
 }
 
 input:checked + img {
