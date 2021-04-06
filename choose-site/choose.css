@@ -19,8 +19,10 @@ body {
     --footer-height: 25px;
     
     font-family: 'Titillium Web', sans-serif;
-    background-color: var(--color2);
+    background-color: black;
 }
+
+
 
 input {
     display: none;
@@ -71,6 +73,7 @@ footer {
 
 
 h2 {
+    color: white;
     font-size: 1.8rem;
     font-weight: bold;
 }
@@ -86,6 +89,16 @@ h2 {
 header img {
     height: var(--header-height);
 }
+
+body {
+    background-image: url("../assets/pokemonlogo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    
+
+    
+   }
 
 p {
     margin: var(--gutter);
