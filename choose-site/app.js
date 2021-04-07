@@ -1,12 +1,17 @@
-import { pokeData } from './data.js';
+// import functions and grab DOM elements
+import { generateThreePokemon } from './data-utils.js';
+import { capturePokemon } from './local-storage-utils.js';
+import { findByPokemonName } from './utils.js';
 
-export function findById(array, id) {
-    return array.find(item => id === item.id);
+const button = document.querySelector('button');
+
+function createPokemonDom() {
+    const pokeRadio1 = document.querySelector('#poke1-radio');
+    const pokeRadio2 = document.querySelector('#poke2-radio');
+    const pokeRadio3 = document.querySelector('#poke3-radio');
+
+    const pokeLabel1 = document.querySelector('#poke1-label');
+    const pokeLabel2 = document.querySelector(.)
 
 }
 
-
-
-export function findPokemonName(name) {
-    return pokeData.find(poke => name === poke.pokemon);
-}
