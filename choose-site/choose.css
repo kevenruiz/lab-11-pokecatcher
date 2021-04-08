@@ -24,10 +24,10 @@ body {
 
 
 
-input {
-    display: 
+/*input {
+    display: none; 
 }
-
+*/
 input:checked + img {
     border: solid 2px magenta
 }
