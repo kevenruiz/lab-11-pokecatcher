@@ -1,7 +1,7 @@
 // import functions and grab DOM elements
 import { generateThreePokemon } from './data-utils.js';
 import { capturePokemon } from './local-storage-utils.js';
-import { findByPokemonName } from './utils.js';
+import { findPokemonName } from './utils.js';
 
 const button = document.querySelector('button');
 
@@ -40,7 +40,7 @@ createPokemonDom();
 button.addEventListener('click', () => {
     const selectedRadio = document.querySelector('input:checked');
 
-    const pokeObject = findByPokemonName(selectedRadio.value);
+    const pokeObject = findPokemonName(selectedRadio.value);
     // we need to find the pokemon that is selected
     capturePokemon(pokeObject);
     createPokemonDom();

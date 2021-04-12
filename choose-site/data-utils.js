@@ -1,5 +1,5 @@
 import pokeData from './data.js';
-import { encounteredPokemon } from './local-storage-utils.js';
+import { encounterPokemon } from './local-storage-utils.js';
 // Lets generate three Pokemon
 export function generateThreePokemon() {
     //start with raw array of pokemon data
@@ -32,9 +32,9 @@ export function generateThreePokemon() {
 
     //increment +1 the number of pokemon encountered
 
-    encounteredPokemon(poke1);
-    encounteredPokemon(poke2);
-    encounteredPokemon(poke3);
+    encounterPokemon(poke1);
+    encounterPokemon(poke2);
+    encounterPokemon(poke3);
     return [poke1, poke2, poke3];
 
 }
