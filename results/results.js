@@ -1,4 +1,4 @@
-import { getPokedex } from '../local-storage-utils.js';
+import { getPokedex } from '../choose-site/local-storage-utils.js';
 //import { attackLevel } from '../local-storage-utils.js';
 
 const pokedex = getPokedex();
