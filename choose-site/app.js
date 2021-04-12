@@ -5,6 +5,8 @@ import { findPokemonName } from './utils.js';
 
 const button = document.querySelector('button');
 
+let totalCaptures = 0;
+
 function createPokemonDom() {
     const pokeRadio1 = document.querySelector('#poke1-radio');
     const pokeRadio2 = document.querySelector('#poke2-radio');
@@ -38,11 +40,19 @@ function createPokemonDom() {
 createPokemonDom();
 
 button.addEventListener('click', () => {
+    totalCaptures++;
     const selectedRadio = document.querySelector('input:checked');
 
     const pokeObject = findPokemonName(selectedRadio.value);
     // we need to find the pokemon that is selected
     capturePokemon(pokeObject);
     createPokemonDom();
+
+    if (totalCaptures >= 10) {
+        window.location = '../results';
+    }
+
+    createPokemonDom();
+
 
 });
